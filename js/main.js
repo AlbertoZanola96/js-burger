@@ -1,35 +1,41 @@
 // Il programma dovrà consentire di calcolare il prezzo del panino selezionando o deselezionando gli ingredienti proposti.
 const cupon = ['1234aaddff', '223344ggttyy', '6789poiu'];
-const prezzoIniziale = 5;
+var prezzoIniziale = 5;
 
 document.getElementById("bottone").addEventListener("click", function() {
-    let add1 = document.getElementById("cheese").value;
-    let add2 = document.getElementById("egg").value;
-    let add3 = document.getElementById("mustard").value;
-    let add4 = document.getElementById("tomato").value;
-    let add5 = document.getElementById("lettuce").value;
-    let add6 = document.getElementById("ketchup").value;
+    let add1 = parseInt(document.getElementById("cheese").value);
+    let add2 = parseInt(document.getElementById("egg").value);
+    let add3 = parseInt(document.getElementById("mustard").value);
+    let add4 = parseInt(document.getElementById("tomato").value);
+    let add5 = parseInt(document.getElementById("lettuce").value);
+    let add6 = parseInt(document.getElementById("ketchup").value);
 
     if(document.getElementById("cheese").checked == true) {
-        console.log(add1)
+        prezzoIniziale = prezzoIniziale + add1;
+        document.getElementById("prezzoPanino").innerHTML = '$' + ' ' + prezzoIniziale;
     }
-    else if (document.getElementById("egg").checked == true) {
-        console.log(add2)
+    if (document.getElementById("egg").checked == true) {
+        prezzoIniziale = prezzoIniziale + add2;
+        document.getElementById("prezzoPanino").innerHTML = '$' + ' ' + prezzoIniziale;
     }
-    else if (document.getElementById("mustard").checked == true) {
-        console.log(add3)
+    if (document.getElementById("mustard").checked == true) {
+        prezzoIniziale = prezzoIniziale + add3;
+        document.getElementById("prezzoPanino").innerHTML = '$' + ' ' + prezzoIniziale;
     }
-    else if (document.getElementById("tomato").checked == true) {
-        console.log(add4)
+    if (document.getElementById("tomato").checked == true) {
+        prezzoIniziale = prezzoIniziale + add4;
+        document.getElementById("prezzoPanino").innerHTML = '$' + ' ' + prezzoIniziale;
     }
-    else if (document.getElementById("lettuce").checked == true) {
-        console.log(add5)
+    if (document.getElementById("lettuce").checked == true) {
+        prezzoIniziale = prezzoIniziale + add5;
+        document.getElementById("prezzoPanino").innerHTML = '$' + ' ' + prezzoIniziale;
     }
-    else if (document.getElementById("ketchup").checked == true) {
-        console.log(add6)
+    if (document.getElementById("ketchup").checked == true) {
+        prezzoIniziale = prezzoIniziale + add6;
+        document.getElementById("prezzoPanino").innerHTML = '$' + ' ' + prezzoIniziale;
     }
 
-    document.getElementById("prezzoPanino").innerHTML = '$' + ' ' + prezzoIniziale;
+   
 });
 
 
