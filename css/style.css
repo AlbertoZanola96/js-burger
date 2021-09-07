@@ -15,6 +15,11 @@ body {
 }
 
 /* comuni */
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
 .inline {
     display: inline;
     font-size: 20px;
@@ -48,13 +53,13 @@ h1 {
 /* inizio main */
 main {
     width: 60%;
-    height: 90%;
+    height: calc(100% - 250px);
     background-color: white;
     margin: 0 auto;
 }
 
 .nomePanino > input {
-    padding: 60px 70px;
+    padding: 30px 70px;
     border: none;
     font-size: 25px;
     outline: none;
@@ -66,7 +71,7 @@ main {
 }
 
 .ingredienti > h2 {
-    padding: 30px 70px;  
+    padding: 10px 70px;  
 }
 
 .ingredienti img {
@@ -92,16 +97,17 @@ main {
 
 .sconto {
     width: 100%;
-    padding: 50px 70px;
+    margin: 100px 0 0 70px;
 }
 
 .sconto > span {
     font-size: 20px;
     font-weight: 500;
 }
+
 #inp {
     width: 600px;
-    height: 30px;
+    height: 35px;
     background-color: #FFF5E2;
     border: none;
     outline: none;
@@ -109,4 +115,31 @@ main {
     margin-left: 20px;
 }
 
+#bottone {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #FDBB40;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 400px;
+}
 
+/* fine main */
+
+
+/* footer */
+.prezzo  {
+    width: 60%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #D33359;
+}
+
+.prezzo h2 {
+    font-size: 25px;
+    padding: 40px;
+    color: white;
+}
