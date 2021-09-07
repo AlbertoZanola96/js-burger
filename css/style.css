@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background-color: #FFF5E2;
+    width: 100%;
+    height: 100vh;
+}
+
+/* comuni */
+.inline {
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+
+/* header */
+.start {
+    position: relative;
+    width: 60%;
+    height: 150px;
+    background-color: #FDBB41;
+    margin: 0 auto;
+}
+
+h1 {
+    padding: 60px 70px;
+    font-size: 250%;
+}
+
+#panino {
+    position: absolute;
+    top: -30px;
+    left: 85%;
+}
+
+/* fine header */
+
+/* inizio main */
+main {
+    width: 60%;
+    height: 90%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.nomePanino > input {
+    padding: 60px 70px;
+    border: none;
+    font-size: 25px;
+    outline: none;
+    font-weight: 700;
+}
+
+.ingredienti > h2 {
+    padding: 60px 70px;  
+}
+
+.ingredienti img {
+    width: 10%;
+    margin-left: 70px;
+}
+
+.colonna1,
+.colonna2  {
+    float: left;
+}
+
+
+
